@@ -36,6 +36,7 @@ module.exports = {
         extensions: ['.tsx'],
       },
     ],
+    'react/no-unstable-nested-components': ['warn'],
     'linebreak-style': 0,
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': 'off',
@@ -47,6 +48,7 @@ module.exports = {
     'function-paren-newline': 'off',
     'comma-dangle': ['error', 'only-multiline'],
     'no-undef': 'off',
+    'react/jsx-curly-newline': 'off',
     'import/extensions': [
       'error',
       'ignorePackages',
@@ -72,17 +74,17 @@ module.exports = {
         pathGroups: [
           {
             pattern: 'react',
-            group: 'external',
+            group: 'builtin',
             position: 'before',
           },
           {
             pattern: 'react-dom',
-            group: 'external',
+            group: 'builtin',
             position: 'before',
           },
           {
             pattern: 'react-native',
-            group: 'external',
+            group: 'builtin',
             position: 'before',
           },
         ],

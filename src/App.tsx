@@ -1,12 +1,10 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet } from 'react-native';
+
+import MultiMainScreen from './screens/multi_navigator/MultiMainScreen';
 
 export default function App() {
-  return (
-    <View>
-      <Text>App</Text>
-    </View>
-  );
+  return <MultiMainScreen />;
 }
 
 const styles = StyleSheet.create({
